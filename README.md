@@ -11,8 +11,11 @@ make
 This will produce `main.js` in the root directory, and this `main.js` is included in the `index.html`.
 Instructions can be found [here](https://guide.elm-lang.org/interop/).
 
+> N.B. `make` does `elm make src/Main.elm --output=main.js`
+
 ### Usage
 ```
-elm reactor
+make run
 ```
 
+> N.B. `make run` just executes `elm reactor`
