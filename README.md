@@ -8,6 +8,9 @@ cd elm-dashboard
 make
 ```
 
+This will produce `main.js` in the root directory, and this `main.js` is included in the `index.html`.
+Instructions can be found [here](https://guide.elm-lang.org/interop/).
+
 ### Usage
 ```
 elm reactor
