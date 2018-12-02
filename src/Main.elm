@@ -6,6 +6,7 @@ import Bootstrap.ButtonGroup as ButtonGroup
 import Bootstrap.Grid as Grid
 import Bootstrap.Grid.Col as Col
 import Bootstrap.Grid.Row as Row
+import Bootstrap.CDN as CDN
 
 
 main =
@@ -40,7 +41,8 @@ view : Model -> Html Msg
 view model =
   -- we use Bootstrap container defined at http://elm-bootstrap.info/grid
   Grid.container []
-    [ Grid.row []
+    [ CDN.stylesheet -- creates an inline style node with the Bootstrap CSS
+      ,Grid.row []
         [ Grid.col [] [ h1 [] [ text "Gateflux" ] ] ]
       , Grid.row []
         [ Grid.col []
